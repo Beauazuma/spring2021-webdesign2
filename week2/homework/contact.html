@@ -4,12 +4,15 @@
 <meta charset="UTF-8">
 <title>contact</title>
 <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;500&family=Volkhov&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header>
 		<nav>
-	<h1><a href="index.html">Beau's Burger</a></h1>
+	<h1><a href="index.html" id="home">Beau's Burger</a></h1>
 	
 		<label for="menuToggle">
 			<img src="toggle_menu.png" alt="menu toggle"
@@ -25,6 +28,28 @@
 												 
 	</nav>
 	</header>
-	<h1>Contact</h1>
+	
+	<form action="form.php">
+	
+<fieldset>
+<label>Name</label>
+<br/>
+<input type="text" maxlength="25" placeholder="First Last">
+<br/>
+<label>Email</label>
+<br/>
+<input type="email" maxlength="25" placeholder="email@email.com">
+<br/>
+<br/><br/>
+<textarea cols="50" rows="8" maxlength="200" placeholder="message"></textarea>
+<br/><br/>	
+<p>
+<input type="checkbox" name="Newsletter" value="checkbox" id="Newsletter_0">
+ <label>Sign me up for your newsletter<br/></label>
+</p>
+<input type="submit" class="send">
+</fieldset>
+</form>
+	
 </body>
 </html>
