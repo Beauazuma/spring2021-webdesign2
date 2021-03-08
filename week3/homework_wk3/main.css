@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*GENERIC RULES*/
+body {
+	margin: 0px;
+}
+
+.home {
+	max-width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	padding-left: 0px;
+}
+
+nav ul a{
+	color: black;
+	text-decoration: none;
+	
+}
+
+/*COLORS*/
+
+.br.green {
+	background-color: rgba(155,233,105,1.00);
+}
+
+.br.red{
+	background-color: rgba(226,79,79,1.00);
+}
+
+.br.yellow {
+	background-color: rgba(245,223,81,1.00);
+}
+
+.br.orange {
+	background-color: rgba(252,143,55,1.00)
+}
+
+/*NAVIGATION*/
+
+nav {
+	display:flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li {
+	padding: 10px 0px;
+	border-bottom: 5px #161616;
+}
+
+/*RESPONSIVE*/
+
+@media(min-width: 768px){
+	nav {
+		flex-direction: row;
+	}
+}
