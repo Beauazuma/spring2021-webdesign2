@@ -34,6 +34,13 @@ h2{
 	font-family: 'Mukta', sans-serif;
 	font-weight: 500;
 	margin: 5px;
+	margin-left: 5px;
+}
+
+h3{
+	font-family: 'Mukta', sans-serif;
+	font-weight: 500;
+	text-align: center;
 	
 }
 
@@ -43,6 +50,7 @@ p{
 	font-size: 20px;
 	line-height: 33px;
 	margin: 5px;
+	padding: 10px;
 }
 
 .container {
@@ -52,7 +60,7 @@ p{
 }
 
 .item {
-	
+	padding: 10px;
 	margin: 5px;
 	
 }
@@ -61,6 +69,68 @@ img{
 	width: 100%;
 	margin: 5px;
 }
+
+/*SHOP*/
+
+.buy {
+
+	font-family: 'Mukta', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	font-size: 25px;
+	padding:5px;
+		
+}
+
+.buy a:link {text-decoration: none; color:black;}
+
+.buy a:hover {color:slategray;}
+
+
+.featured-item{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.featured{
+	width:100%;
+	text-align: center;
+	
+}
+
+
+/*FORM*/
+
+form {
+	border:solid;
+	border-width:100%;
+	margin: 0 auto; 
+	overflow:hidden;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+	
+}
+
+input,textarea {
+	padding: 0.5em 0.6em; 
+	border: 1px solid #ccc; 
+	border-radius: 4px;
+	margin: 5px 0 15px 0;
+}
+
+
+
+label {margin: 0.25em 0;}
+
+fieldset {border:0;}
+
+.send {background-color: white; width:163px;padding:10px; font-size: 1em}
+
+.send:hover {background-color:greenyellow;}
+
+
+
+
 /*HOVER*/
 
 header a:link {text-decoration:none;color:black;}
@@ -156,6 +226,23 @@ nav ul li:last-child{
 	
 	.long {
 		width: 440px;
+	}
+	
+/*SHOP*/
+	
+	.featured-item{
+		flex-direction: row;
+	}
+	
+	.featured{
+		width: 300px;
+		padding:10px;
+	}
+	
+/*FORM*/
+	
+	form{
+		width: 600px;
 	}
 	
 }
