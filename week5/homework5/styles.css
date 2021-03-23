@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*GENERIC RULES*/
+
+body{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	
+	
+
+}
+
+img{
+	max-width:100%;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+nav {
+	display:flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+header a:link {text-decoration:none;color:black;}
+/*visited*/
+header a:visited {text-decoration:none;color:black}
+/*hover*/
+header a:hover {color:slategray;}
+/*pressed*/
+header a:active {color:slategray;}
+
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li {
+	padding: 10px 0px;
+	border-bottom: 2px solid;
+}
+
+nav ul li:last-child{
+	border-bottom: none;
+}
+/*COLORS*/
+
+.bg-gray{
+	background-color: darkgray;
+}
+
+.bg-blue{
+	background-color:cornflowerblue;
+}
+
+.bg-orange{
+	
+	
+}
+
+.bg-img1{
+	background-image: url("music1.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img2{
+	background-image: url("music2.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img3{
+	background-image: url("music3.png");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img4{
+	background-image: url("music4.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img5{
+	background-image: url("music5.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img6{
+	background-image: url("music6.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img7{
+	background-image: url("jazz1.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img8{
+	background-image: url("jazz2.jpg");
+	background-position: top;
+	background-size: cover;
+}
+
+.bg-img9{
+	background-image: url("jazz3.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img10{
+	background-image: url("jazz4.png");
+	background-position: center;
+	background-size: cover;
+}
+/*GRIDS*/
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.flex-container > * {
+	width: 100%;
+}
+
+article{
+	height: 250px;
+	border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+	
+	.flex-container{
+		flex-wrap:nowrap;
+	}
+	.w-md-50 {
+		width: 50%;
+	}
+	.w-lg-33 {
+		width: 33.3333%;
+		}
+	
+	.bg-orange{
+		padding:15px;
+		
+	}
+
+
+
+	nav {
+		flex-direction: row;
+	}
+	
+	nav ul{
+		flex-direction: row;
+		flex-grow: 1;
+		justify-content: space-evenly;
+	}
+	
+	nav ul li{
+		border-bottom: none;
+		border-right: 2px solid;
+		border-height: 20px;
+		flex-grow: 1;
+		text-align: center;
+	}
+	
+	nav ul li:last-child{
+		border-right:none;
+	}
+	
+
+
+}
+
+@media (min-width: 1024px){
+	.w-lg-33 {
+		width: 33.3333%;
+		}
+	.w-lg-25{
+		width: 25%;
+	}
+	
+	.flex-container{
+		width: 1024px;
+		margin: auto;
+	}
+}
+
+
+
