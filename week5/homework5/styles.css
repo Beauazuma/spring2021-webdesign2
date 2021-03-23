@@ -7,7 +7,7 @@ body{
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
 	
-	
+	line-height:25px;
 
 }
 
@@ -130,6 +130,57 @@ nav ul li:last-child{
 	background-position: center;
 	background-size: cover;
 }
+
+.bg-img11{
+	background-image: url("rock1.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img12{
+	background-image: url("rock2.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img13{
+	background-image: url("rock3.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img14{
+	background-image: url("rock4.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img15{
+	background-image: url("rock5.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img16{
+	background-image: url("rock6.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-img17{
+	background-image: url("rock7.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+
+.bg-img18{
+	background-image: url("rock8.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+
 /*GRIDS*/
 
 .flex-container{
