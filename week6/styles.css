@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*GENERIC RULES*/
+
+body{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	
+	line-height:25px;
+
+}
+
+h1 a{
+	font-size: 29px;
+}
+
+img{
+	max-width:100%;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 15px;
+}
+
+nav {
+	display:flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+header a:link {text-decoration:none;color:black;}
+/*visited*/
+header a:visited {text-decoration:none;color:black}
+/*hover*/
+header a:hover {color:slategray;}
+/*pressed*/
+header a:active {color:slategray;}
+
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li {
+	padding: 10px 0px;
+	border-bottom: 2px solid;
+}
+
+nav ul li:last-child{
+	border-bottom: none;
+}
+
+
+form {
+	font-family: 'Roboto', sans-serif;
+	border-width:100%;
+	margin: 0 auto; 
+	overflow:hidden;
+	
+	
+}
+
+input,textarea {
+	padding: 0.5em 0.6em; 
+	border: 1px solid #ccc; 
+	
+	margin: 5px 0 15px 0;
+}
+
+
+
+label {margin: 0.25em 0;}
+
+fieldset {border:0;}
+
+.send {
+	background-color: black; 
+	color: white;
+	width:163px;
+	padding:10px; 
+	font-size: 1em}
+
+.send:hover {color: darkgray;}
+
+
+
+/*COLORS*/
+
+.bg-gray{
+	background-color: darkgray;
+}
+
+.bg-blue{
+	background-color:cornflowerblue;
+}
+
+.bg-orange{
+	
+	
+}
+
+.gallery:first-child{
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+.empty{
+	text-align: center;
+	fontsize: 23px;
+}
+
+.buy a:link {
+	text-decoration: none; 
+	color:white; 
+	background-color: black;
+	padding:7px;
+	
+}
+
+.buy a:visited {
+	text-decoration: none;
+	color:white;
+}
+
+.buy a:hover {color:slategray;}
+
+
+
+
+.featured-item{
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+.featured{
+	width:100%;
+	
+	padding-top:10px;
+	
+}
+
+
+
+@media (min-width: 768px){
+	
+	section{ 
+		width:752px;
+		margin:auto;
+	}
+	
+nav {
+		flex-direction: row;
+	}
+	
+	nav ul{
+		flex-direction: row;
+		flex-grow: .5;
+		justify-content: space-evenly;
+	}
+	
+	nav ul li{
+		padding: 5px;
+		border-bottom: none;
+		
+		
+		flex-grow: 1;
+		text-align: center;
+	}
+	
+	nav ul li:last-child{
+		border-right:none;
+	}
+	
+	.featured-item{
+		flex-direction: row;
+	}
+	
+	.featured{
+		width: 300px;
+		padding:10px;
+	}
+}

@@ -86,6 +86,11 @@ img{
 
 .buy a:hover {color:slategray;}
 
+.buy{
+	background: solid black;
+	text-decoration-color: aliceblue;
+}
+
 
 .featured-item{
 	display: flex;
