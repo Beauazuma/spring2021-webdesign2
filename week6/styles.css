@@ -11,8 +11,9 @@ body{
 
 }
 
-h1 a{
+h1 {
 	font-size: 29px;
+	text-align: center;
 }
 
 img{
@@ -55,7 +56,10 @@ nav ul {
 
 nav ul li {
 	padding: 10px 0px;
-	border-bottom: 2px solid;
+	border-bottom: 1.5px solid;
+	text-align: center;
+	width:75px;
+	margin:auto;
 }
 
 nav ul li:last-child{
@@ -75,7 +79,7 @@ form {
 input,textarea {
 	padding: 0.5em 0.6em; 
 	border: 1px solid #ccc; 
-	
+	font-family: 'Roboto', sans-serif;
 	margin: 5px 0 15px 0;
 }
 
@@ -166,6 +170,7 @@ fieldset {border:0;}
 	
 nav {
 		flex-direction: row;
+		padding-left: 30px;
 	}
 	
 	nav ul{
