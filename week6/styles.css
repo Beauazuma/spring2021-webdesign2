@@ -12,13 +12,14 @@ body{
 }
 
 h1 {
-	font-size: 29px;
+	font-size: 27px;
 	text-align: center;
 }
 
 img{
 	max-width:100%;
 }
+
 
 nav ul {
 	list-style: none;
@@ -31,7 +32,7 @@ nav ul a {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	text-align: center;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 nav {
@@ -56,9 +57,9 @@ nav ul {
 
 nav ul li {
 	padding: 10px 0px;
-	border-bottom: 1.5px solid;
+	border-bottom: .5px solid;
 	text-align: center;
-	width:75px;
+	width:70px;
 	margin:auto;
 }
 
@@ -159,7 +160,27 @@ fieldset {border:0;}
 	
 }
 
+.item {
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
 
+.preview {
+	padding: 0px 10px 0px 10px;
+}
+
+h2{
+	
+    padding-left: 10px;
+    font-size: 29px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h3 {
+	margin: 5px 0px 7px 0px;
+}
 
 @media (min-width: 768px){
 	
@@ -171,11 +192,12 @@ fieldset {border:0;}
 nav {
 		flex-direction: row;
 		padding-left: 30px;
+		justify-content: space-between;
 	}
 	
 	nav ul{
 		flex-direction: row;
-		flex-grow: .5;
+		
 		justify-content: space-evenly;
 	}
 	
@@ -184,7 +206,6 @@ nav {
 		border-bottom: none;
 		
 		
-		flex-grow: 1;
 		text-align: center;
 	}
 	
@@ -200,4 +221,30 @@ nav {
 		width: 300px;
 		padding:10px;
 	}
+	
+	.item {
+		display:flex;
+		flex-direction: row;
+		width:350px;
+		
+		
+		
+	}
+	
+	.info {
+		display: block;
+		flex-direction: column;
+		margin-top: 0px;
+		margin-left: 50px;
+	}
+	
+	h3{
+		margin-top:0px;
+	}
+	
+	h2{
+		padding-left: 100px;
+	}
+	
+	
 }
