@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>JAVA</title>
+	
+	<style>
+		body {
+			margin:0px;
+			
+		}
+		
+		img{
+			max-width:100%;
+		}
+		
+		#myHeading {
+			background-color:whitesmoke;
+			margin:0px;
+			padding:20px;
+			color:black;
+			
+		}
+		
+		#myDiv{
+			height:400px;
+			background-image:url("Sal-1.jpg");
+			 background-color: #cccccc; 
+ 			 height: 400px;
+ 			 background-position: center; 
+ 			 background-repeat: no-repeat; 
+ 			 background-size: cover; 
+		}
+		
+		#myMain{
+			margin:auto;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-size: 10px;
+			
+		}
+		
+		.elementclass{
+			
+		}
+		
+	</style>
+</head>
+
+<body>
+	<h1 id="myHeading">normalwebsite.com</h1>
+	
+	<div id="myDiv"></div>
+	
+	<div id="myMain">
+		<p>Impractical Jokers premiered on December 15, 2011 on TruTV, which was watched by over 32 million viewers in its first season. The show has become the most popular series on TruTV and has boosted Vulcano into the public eye. Sal is currently the most punished joker on the show.</p>
+	</div>
+	
+	<button href="#" id="imageChange">Dont click this button!</button>
+	<button href="#" id="textChange">Easy Read</button>
+	
+	<script>
+		console.log("This is your page talking to you!");
+		
+		let bigDiv = document.getElementById("myDiv");
+		let trigButton = document.getElementById("imageChange");
+		let docHeading = document.getElementById("myHeading");
+		let docMain = document.getElementById("myMain");
+		let typeButton = document.getElementById("textChange");
+		
+		console.log(trigButton);
+		
+		trigButton.addEventListener("click", function(){
+			
+			let userAnswer = confirm("Are you sure you want to this this?");
+			
+				if(userAnswer == true){
+					docHeading.style.backgroundColor = "black";
+					docHeading.style.color = "white";
+					bigDiv.style.backgroundImage = "url(sal.jpg)";
+					alert("sal");
+				}
+			
+			
+		})
+		
+		typeButton.addEventListener("click", function(){
+		
+			docMain.style.fontWeight = "600";
+			docMain.style.fontSize = "50px";
+		
+		
+		})
+		
+	</script>
+</body>
+</html>
