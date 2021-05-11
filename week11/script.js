@@ -3,6 +3,7 @@ let carouselImages = ["dance1.jpg", "dance2.jpg", "dance3.jpg"];
 let foodImages = ["pizza.jpg", "cake.jpg", "fish.jpg"];
 let partyImages = ["party1.jpg", "party2.jpg", "party3.jpg"];
 let rockinImages = ["rockin1.jpg", "rockin2.jpg", "rockin3.jpg"];
+let drinkImages = ["drink1.jpg", "drink2.jpg", "drink3.jpg"];
 let currentIndex = 2;
 let carouselIMG = document.getElementById("carouselIMG");
 
