@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAVA-img</title>
+</head>
+	
+	<style>
+		body{
+			margin: 0px;
+		}
+		
+		#thumbnail img{
+			width: 100px;
+			margin: auto;
+		}
+		
+		.logo {
+			width: 140px;
+			margin: 0px;
+		}
+		.logo img{
+			margin: auto;
+			
+		}
+		
+		
+		
+		#toggleAssist,ul.nav-links {
+    	display: none;
+
+		}
+
+	
+	#toggleAssist:checked + ul.nav-links {
+
+
+    display: block;
+
+}
+		
+		nav ul a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 18px;
+}
+
+nav {
+	
+	
+	padding: 10px;
+}
+		
+		
+		.felx-container{
+			display: flex;
+			flex-direction: row;
+			width:100%;
+			
+		}
+		
+		.flex-item{
+			padding: 10px;
+			margin-right: 100px;
+			width:45px;
+		}
+		
+		.flex-item img{
+			width: 150px;
+		}
+
+
+			
+#imgBig img{
+	
+	width:655px;
+	
+			
+		}
+
+
+
+@media (min-width: 768px) {
+
+			.logo {
+				margin:auto;
+			}
+
+    .toggle-button {
+
+
+        display: none;
+		
+    }
+
+
+
+
+    ul.nav-links {
+
+
+        display: block;
+
+
+        float: right;
+
+    }
+
+
+
+
+    .nav-links li {
+
+
+        display: inline-block;
+
+
+        padding: 10px;
+
+
+        border-bottom: none;
+
+    }
+	
+	
+	
+	
+
+}
+	
+	
+	
+	</style>
+
+<body>
+	<header>
+		
+		 <nav>
+
+
+      <label for="toggleAssist">
+
+
+        <img src="hamberger-menu-open.png" class="toggle-button" alt="menu" id="docHeading" style="width:40px;">
+		  
+		
+      </label>
+
+       <img src="logo.png" class="logo" alt="company-logo">   
+
+
+      <ul class="nav-links">
+
+
+        <li><a href="#">Home</a></li>
+
+
+        <li><a href="#">About</a></li>
+
+
+        <li><a href="#">Blog</a></li>
+
+
+        <li><a href="#">Contact Us</a></li>
+
+
+      </ul>
+
+
+    </nav>
+		
+	
+		
+</header>
+	
+<main>
+	<section>
+		<div class="felx-container">
+			<div class="flex-item">
+				<img src="img188 small.jpg" alt="ones" id="imageOne"><br>
+			</div>
+			
+			<div class="flex-item">
+				<img src="img209sml.jpg" alt="twos" id="imageTwo"><br>
+			</div>
+			
+			<div class="flex-item">
+				<img src="img312 small.jpg" alt="threes" id="imageThree"><br>
+			</div>
+			
+			<div class="flex-item">
+				<img src="img414 small.jpg" alt="four" id="imageFour"><br>
+			</div>
+				
+		</div>
+		
+		
+		<div id="imgBig">
+				<img src="img188large.jpg" alt="onebig" id="imgDeen"><br>
+			</div>
+		
+	</section>
+	
+	
+	
+
+</main>
+	
+	<script src="script.js">
+	</script>
+	
+</body>
+</html>
