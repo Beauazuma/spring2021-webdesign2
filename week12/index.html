@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JQueary</title>
+</head>
+
+<body>
+	
+	<style>
+		
+		
+		
+		
+		
+	</style>
+	
+<main>
+	<section id="images">
+		
+		<div class="img-container">
+			<img src="imgCat.jpg" alt="nani">
+		</div>
+		
+			<button id="toggleImg">Toggle img 1</button>
+		
+		<div class="img-container2">
+			<img src="img-2.jpg" alt="second img">
+		</div>
+		
+			<button id="toggleImg2">Toggle img 2</button>
+		
+		<div class="img-container3">
+			<img src="img-3.jpg" alt="third img">
+		</div>
+		
+			<button id="toggleImg3">Toggle img 3</button>
+		
+		<div class="img-container4">
+			<img src="img-4.jpg" alt="fourth img">
+		</div>
+		
+			<button id="toggleImg4">Toggle img 4</button>
+		
+	</section>
+</main>
+
+
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<script>
+		
+		$("#toggleImg").click(function(){	 
+			$(".img-container img").toggle();		 
+		})
+		
+		$("#toggleImg2").click(function(){	 
+			$(".img-container2 img").toggle();		 
+		})
+		
+		$("#toggleImg3").click(function(){	 
+			$(".img-container3 img").toggle();		 
+		})
+		
+		$("#toggleImg4").click(function(){	 
+			$(".img-container4 img").toggle();		 
+		})
+		
+		
+	
+	</script>
+</body>
+</html>
