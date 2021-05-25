@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="libs/jqueryUI/jquery-ui.css">
+	
+<title>America</title>
+</head>
+	
+	<styles>
+	
+	
+	</styles>
+
+<body>
+	
+	<div class="ui-widget">
+	  <label for="tags">Search: </label>
+	  <input id="tags">
+	</div>
+	
+	<img src="fun-usa-map.jpg" alt="USA" 
+		 style="
+								padding-top: 20px;	
+												">
+	
+	<div id="accordion">
+  <h3>Fun Fact 1</h3>
+  <div>
+	  <h2>Florida</h2>
+    <p>
+		
+   The remains of an 8,000-year-old human civilization were found buried in a peat bog here. The bodies were so well preserved that human brain tissue was found in a woman’s skull with her DNA still intact. These are the cheapest months of the year to visit all 50 states.
+    </p>
+  </div>
+  <h3>Fun Fact 2</h3>
+  <div>
+	  <h2>Iowa</h2>
+    <p>
+    The world’s largest painted ball resides in Alexandria: The 4,000-pound baseball with a 14-foot circumference is the creation of Michael Carmichael, who began the project more than 50 years ago after dropping a ball in paint; he now adds another coat or two every year.
+    </p>
+  </div>
+  <h3>Fun Fact 3</h3>
+  <div>
+	  <h2>Oregon</h2>
+    <p>
+  “Many people are not capable of knowing how to pump gas and the hazards of not doing it correctly. Besides I don't want to go to work smelling of gas when I get it on my hands or clothes. I agree Very bad idea.”
+	  </p>
+	  <p>
+“I don't even know HOW to pump gas and I am 62, native Oregonian.....I say NO THANKS! I don't want to smell like gasoline!”
+	  </p>
+	  <p>
+“I've lived in this state all my life and I REFUSE to pump my own gas. I had to do it once in California while visiting my brother and almost died doing it. This a service only qualified people should perform. I will literally park at the pump and wait until someone pumps my gas. I can't even”
+    </p>
+   
+  </div>
+  <h3>Fun Fact 4</h3>
+  <div>
+	  <h2>Kansas</h2>
+    <p>
+    It’s the state that was proved to be—quite literally—flatter than a pancake. Scientists tested the flatness of the state against the topography of a pancake. On a zero- to-one scale of perfect flatness, Kansas was flatter, with a score of 0.9997. The pancake scored only 0.957. But it’s worth noting that Kansas isn’t the flattest U.S. state. That title goes to…Florida.
+    </p>
+   
+  </div>
+</div>
+	
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	
+	<script src="libs/jqueryUI/jquery-ui.js"></script>
+	
+	<script>
+
+	  $( function() {
+		$( "#accordion" ).accordion();
+	  } );
+		
+		
+  $( function() {
+    var availableTags = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  
+ 
+	</script>
+	
+</body>
+</html>
