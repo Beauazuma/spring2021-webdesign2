@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+
+}
+
+.logo{
+	margin:auto;
+	width:220px;
+	
+}
+
+nav{
+	display:flex;
+	flex-direction: column;
+	text-decoration: none;
+	margin: auto;
+}
+
+nav ul{
+	text-decoration:none;
+	list-style:none;
+}
+
+nav ul li{
+	padding:10px 0px;
+	border-bottom: .5px solid;
+	width:70px;
+	font-size:17px;
+	font-weight: 300;
+	
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align:center;
+	text-decoration: none;
+	
+}
+
+nav ul li:last-child{
+	border-bottom:none;
+	background-color: yellow;
+	font-weight: 400;
+}
+
+
+
