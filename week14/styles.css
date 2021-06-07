@@ -7,41 +7,245 @@ body{
 }
 
 .logo{
-	margin:auto;
-	width:220px;
+	width: 190px;
+	
 	
 }
 
-nav{
-	display:flex;
-	flex-direction: column;
-	text-decoration: none;
-	margin: auto;
+.logo img{
+	margin:auto;
 }
 
-nav ul{
-	text-decoration:none;
-	list-style:none;
+#lgo img{
+	width:100%;
 }
+
+
+nav{
+	background: rgba(16,27,66,1.00);
+
+}
+
+header{
+	
+	display:block;
+	
+}
+
+header a:link{
+	text-decoration: none;
+}
+
+
+
+nav ul{
+	width:100%;
+	list-style:none;
+	
+
+	padding:0px;
+	
+}
+	
+
+nav ul a {
+	color: white;
+}
+
+
 
 nav ul li{
 	padding:10px 0px;
-	border-bottom: .5px solid;
-	width:70px;
+	border-bottom: .5px #EEEDED;
+	width:100px;
 	font-size:17px;
 	font-weight: 300;
-	
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align:center;
-	text-decoration: none;
+	margin: auto;
 	
 }
 
 nav ul li:last-child{
 	border-bottom:none;
-	background-color: yellow;
+	background-color:rgba(249,168,82,1.00);
 	font-weight: 400;
+	border-radius: 10px;
+
+	
+}
+
+li{
+	display: list-item;
+}
+
+header nav ul {
+    display: none;
+    padding-left: 0px;
+    list-style: none;
+  
+}
+
+#menutoggle:checked + ul {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#menuimg{
+	 max-width: 55px;
+    float: right;
+    margin-top: 32px;
+    margin-right: 20px;
+}
+
+#menutoggle{
+	display:none;
+}
+
+.homeIMG h2{
+	 font-size: 20px;  
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-left: 100px;
+    text-align: right;
+    font-weight: 300;
+	float: right;
+}
+
+.homeIMG{
+	background-color: rgba(240,239,239,0.57);
+	background-image: url("imgs/soldier-708711_960_720.jpg"); 
+  height: 400px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+	magin:auto;
+	padding: 25px;
+}
+
+.home{
+	margin:auto;
+	padding: 30px;
+	max-width: 610px;
 }
 
 
+
+.home h1{
+	margin-top: 0px;
+	padding:55px 0 0 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.home p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+.button a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.button a{
+	
+  border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;  
+	font-family: 'Source Sans Pro', sans-serif;
+  
+    
+}
+  
+button{
+	background-color: rgba(249,168,82,1.00);
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  font-size: 19px;
+	font-weight:500;
+		border-radius: 10px;
+	
+}
+
+
+button a{
+	text-decoration: none;
+	color: white;
+}
+
+.donate{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width:120px;
+	
+}
+
+
+.button{
+	margin: auto;
+	display:flex;
+	flex-direction: column;
+	width:150px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+}
+
+footer{
+	height:35px;
+	background-color: rgba(16,27,66,1.00);
+}
+
+footer img{
+	width:30px;
+	
+}
+
+.footer img a:link{
+	margin: auto;
+}
+
+
+@media (min-width: 768px){
+	
+	#menuimg{
+		display:none;
+	}
+	
+	nav{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	header nav ul{
+		display: flex;
+		justify-content: space-evenly;
+		float: right;
+		width: 400px;
+		margin-top: 37px;
+	}
+	
+	nav ul li{
+		font-size: 20px;
+	}
+	
+	.homeIMG{
+		height: 600px;
+	}
+	
+	.homeIMG h2{
+		font-size: 30px;
+	}
+
+}
+
+	
 
