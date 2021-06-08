@@ -15,4 +15,15 @@ let toggleTheImage = function(){
         menuIMG.src = "imgs/closemenu.png";
     }
 }
+
+ $( function() {
+		$( "#accordion" ).accordion();
+	  } );
+
+$( "a" ).click(function( event ) {
+  event.preventDefault();
+  $( "<div>" )
+    .append( "default " + event.type + " prevented" )
+    .appendTo( "#log" );
+});
  
