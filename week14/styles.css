@@ -280,6 +280,7 @@ footer img{
 		background-size: cover;
 		background-position: center;
 	}
+
 #accordion{
 	padding:10px;
 	margin: auto;
@@ -341,6 +342,35 @@ footer img{
 	max-width: 610px;
 }
 
+
+.donation{
+	
+	font-family: 'Source Sans Pro', sans-serif;
+	padding:10px;
+	border-radius: 5px;
+	background-color: rgba(234,234,234,1.00);
+	margin-top: 15px;
+	max-width: 500px;
+		margin:auto;
+}
+
+.donation h1{
+	font-size:25px;
+	margin:auto;
+}
+.donation p{
+	font-weight:300;
+	font-size: 25px
+	
+}
+
+.donation button{
+	margin-top: 20px;
+}
+
+.donation button a:hover {
+	color:slategray;
+}
 
 @media (min-width: 768px){
 	
